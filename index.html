@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="EDU HUB ZULIZAN - Portal Digital Pendidikan & Inovasi Guru">
+<title>EDU HUB ZULIZAN</title>
+<style>
+:root{--p:#163d73;--p2:#2e6ab7;--a:#f3a400;--bg:#f4f7fb;--w:#fff;--t:#172033;--m:#667085;--b:#e3e8f0}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--t)}
+.side{position:fixed;left:0;top:0;bottom:0;width:250px;background:linear-gradient(180deg,#0e2d56,#163d73);color:#fff;padding:18px 12px;overflow:auto;z-index:5}
+.logo{width:44px;height:44px;background:#fff;color:var(--p);border-radius:12px;display:grid;place-items:center;font-weight:900}.brand{display:flex;gap:10px;align-items:center;padding:6px 8px 20px}.brand b{font-size:14px}.brand small{display:block;font-size:10px;opacity:.75;margin-top:3px}
+.nav a{display:block;color:#eaf2fc;text-decoration:none;padding:10px;border-radius:9px;font-size:13px;margin:2px 0}.nav a:hover,.nav a.on{background:#ffffff20}.title{font-size:10px;letter-spacing:1.2px;opacity:.55;padding:13px 9px 5px}
+.main{margin-left:250px}.top{height:66px;background:#fff;border-bottom:1px solid var(--b);display:flex;align-items:center;padding:0 22px;gap:12px;position:sticky;top:0;z-index:4}.menu{display:none;border:0;padding:8px 11px;border-radius:8px}.search{max-width:650px;flex:1}.search input{width:100%;padding:11px 13px;border:1px solid var(--b);border-radius:10px}.avatar{margin-left:auto;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#eaf1fb;color:var(--p);font-weight:800}
+.wrap{max-width:1400px;margin:auto;padding:24px}.page{display:none}.page.active{display:block}
+.hero{background:linear-gradient(135deg,#14365f,#2f6ebd);color:#fff;border-radius:19px;padding:30px}.hero h1{font-size:30px;margin:8px 0}.hero p{max-width:780px;line-height:1.6;color:#eaf2fb}.actions{display:flex;gap:9px;flex-wrap:wrap}
+.btn{border:0;border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer}.primary{background:var(--p);color:#fff}.light{background:#fff;color:var(--p)}.accent{background:var(--a);color:#211500}.outline{background:#fff;border:1px solid var(--b)}
+.sec{display:flex;justify-content:space-between;align-items:end;margin:25px 0 12px}.sec h2{margin:0;font-size:20px}.muted{color:var(--m);font-size:13px;line-height:1.55}
+.grid{display:grid;gap:15px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--b);border-radius:14px;padding:17px;box-shadow:0 3px 12px #0b1f3a08}.icon{font-size:28px}.badge{display:inline-block;padding:4px 8px;border-radius:99px;background:#edf4ff;color:#24518e;font-size:10px;font-weight:700}
+.quick{display:grid;grid-template-columns:repeat(7,1fr);gap:9px}.quick button{background:#fff;border:1px solid var(--b);border-radius:11px;padding:12px 5px;min-height:68px}
+.note{padding:12px 14px;border-left:4px solid var(--a);background:#fff8e8;border-radius:8px;font-size:13px;line-height:1.5}.info{padding:12px 14px;border-left:4px solid var(--p2);background:#eef5ff;border-radius:8px;font-size:13px;line-height:1.5}
+.res{display:flex;gap:12px;align-items:center}.res .ico{font-size:27px}.res a{color:var(--p2);text-decoration:none;font-weight:700}
+table{width:100%;border-collapse:collapse;min-width:680px}th,td{padding:10px;border-bottom:1px solid var(--b);font-size:12px;text-align:left}th{background:#f7f9fc}.table{overflow:auto;border:1px solid var(--b);border-radius:10px}
+.footer{margin-top:34px;background:#0e2d56;color:#dce8f6;padding:24px;font-size:12px}
+@media(max-width:1050px){.g4{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.side{transform:translateX(-100%);transition:.2s}.side.open{transform:translateX(0)}.main{margin-left:0}.menu{display:block}.top{padding:0 12px}.wrap{padding:16px}.g3,.g2,.g4{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<aside class="side" id="side">
+<div class="brand"><div class="logo">EZ</div><div><b>EDU HUB ZULIZAN</b><small>Portal Digital Pendidikan & Inovasi Guru</small></div></div>
+<div class="title">UTAMA</div>
+<nav class="nav">
+<a href="#dashboard">🏠 Dashboard</a><a href="#guru">👨‍🏫 Ruang Guru</a><a href="#murid">🎓 Ruang Murid</a><a href="#sejarah">📜 Akademik Sejarah</a><a href="#ai">🤖 AI & Inovasi</a><a href="#kuiz">🧠 Kuiz Digital</a><a href="#pbd">📊 Dashboard PBD</a><a href="#sumber">🔗 Sumber Digital</a>
+<div class="title">PENGURUSAN</div><a href="#aktiviti">📝 Aktiviti & Latihan</a><a href="#admin">⚙️ Admin</a><a href="#profil">👤 Profil</a>
+</nav>
+<p style="font-size:10px;opacity:.65;line-height:1.5;padding:8px">Prototaip awam. Fungsi login, database awan dan kawalan akses sebenar memerlukan backend.</p>
+</aside>
+<main class="main">
+<header class="top"><button class="menu" onclick="document.getElementById('side').classList.toggle('open')">☰</button><div class="search"><input id="search" placeholder="Cari: Guru, Murid, Sejarah, AI, Kuiz, PBD..."></div><div class="avatar">ZJ</div></header>
+<div class="wrap">
+
+<section class="page active" id="dashboard">
+<div class="hero"><span class="badge" style="background:#ffffff22;color:#fff">PORTAL DIGITAL PENDIDIKAN</span><h1>Selamat Datang ke EDU HUB ZULIZAN</h1><p>Menghubungkan Guru, Murid, Ilmu dan Teknologi melalui bahan pembelajaran, Sejarah, AI, kuiz digital, PBD dan sumber pendidikan.</p><div class="actions"><button class="btn light" onclick="go('guru')">Ruang Guru</button><button class="btn accent" onclick="go('murid')">Ruang Murid</button><button class="btn light" onclick="go('kuiz')">Main Kuiz</button></div></div>
+<div class="sec"><div><h2>Akses Pantas</h2><span class="muted">Modul utama portal</span></div></div>
+<div class="quick"><button onclick="go('guru')">👨‍🏫<br><b>Guru</b></button><button onclick="go('murid')">🎓<br><b>Murid</b></button><button onclick="go('sejarah')">📜<br><b>Sejarah</b></button><button onclick="go('ai')">🤖<br><b>AI</b></button><button onclick="go('kuiz')">🧠<br><b>Kuiz</b></button><button onclick="go('pbd')">📊<br><b>PBD</b></button><button onclick="go('sumber')">🔗<br><b>Sumber</b></button></div>
+<div class="sec"><div><h2>Ringkasan</h2></div></div>
+<div class="grid g4"><div class="card"><span class="muted">Modul</span><h2>10</h2><span class="muted">Struktur utama</span></div><div class="card"><span class="muted">Sejarah</span><h2>T4–T6</h2><span class="muted">Nota & aktiviti</span></div><div class="card"><span class="muted">PBD</span><h2>TP1–TP6</h2><span class="muted">Prototaip</span></div><div class="card"><span class="muted">Sumber</span><h2>6</h2><span class="muted">Platform digital</span></div></div>
+</section>
+
+<section class="page" id="guru"><div class="sec"><div><h2>Ruang Guru</h2><span class="muted">Perancangan PdP, PBD dan Panitia Sejarah</span></div></div><div class="grid g3">
+<div class="card"><div class="icon">📋</div><h3>Perancangan PdP</h3><p class="muted">RPH, DSKP, Modul PdP, Pembelajaran Terbeza dan PAK21.</p><button class="btn primary" onclick="msg('Ruang Perancangan PdP sedia untuk bahan sebenar.')">Buka</button></div>
+<div class="card"><div class="icon">📊</div><h3>Pentaksiran</h3><p class="muted">PBD, TP1 hingga TP6, instrumen, rubrik dan pencapaian.</p><button class="btn primary" onclick="go('pbd')">Akses PBD</button></div>
+<div class="card"><div class="icon">🏫</div><h3>Panitia Sejarah</h3><p class="muted">Program, kertas kerja, pelan taktikal, operasi, laporan dan intervensi.</p><button class="btn primary" onclick="msg('Ruang Panitia Sejarah sedia untuk dokumen sebenar.')">Buka</button></div>
+<div class="card"><div class="icon">📚</div><h3>Bahan Guru</h3><p class="muted">Nota, lembaran kerja, soalan, modul dan bahan digital.</p><button class="btn primary" onclick="go('aktiviti')">Akses</button></div>
+<div class="card"><div class="icon">💡</div><h3>Idea PdP</h3><p class="muted">Aktiviti pembelajaran aktif dan inovasi teknologi.</p><button class="btn primary" onclick="go('ai')">Jana Idea</button></div>
+<div class="card"><div class="icon">🧾</div><h3>Instrumen & Rubrik</h3><p class="muted">Ruang membina dan mengurus instrumen.</p><button class="btn primary" onclick="msg('Ruang instrumen dan rubrik sedia untuk dikembangkan.')">Buka</button></div>
+</div></section>
+
+<section class="page" id="murid"><div class="sec"><div><h2>Ruang Murid</h2><span class="muted">Pembelajaran kendiri, aktiviti dan cabaran</span></div></div><div class="grid g3">
+<div class="card"><div class="icon">📖</div><h3>Pembelajaran</h3><p class="muted">Sejarah Tahun 4, 5 dan 6; nota, video dan infografik.</p><button class="btn primary" onclick="go('sejarah')">Belajar</button></div>
+<div class="card"><div class="icon">🎮</div><h3>Aktiviti Interaktif</h3><p class="muted">Latihan, lembaran kerja, kuiz dan permainan pendidikan.</p><button class="btn primary" onclick="go('aktiviti')">Mula</button></div>
+<div class="card"><div class="icon">🏆</div><h3>Pembelajaran Kendiri</h3><p class="muted">Uji diri, semak jawapan, cabaran dan markah.</p><button class="btn accent" onclick="go('kuiz')">Uji Diri</button></div>
+</div></section>
+
+<section class="page" id="sejarah"><div class="sec"><div><h2>Akademik Sejarah</h2><span class="muted">Tahun 4, Tahun 5 dan Tahun 6</span></div></div><div class="grid g3">
+<div class="card"><div class="icon">📜</div><span class="badge">Tahun 4</span><h3>Modul Tahun 4</h3><p class="muted">Nota, aktiviti, kuiz dan lembaran kerja.</p><button class="btn primary" onclick="msg('Ruang Tahun 4 sedia diisi dengan bahan DSKP.')">Akses Modul</button></div>
+<div class="card"><div class="icon">🏛️</div><span class="badge">Tahun 5</span><h3>Modul Tahun 5</h3><p class="muted">Nota, aktiviti, kuiz dan lembaran kerja.</p><button class="btn primary" onclick="msg('Ruang Tahun 5 sedia diisi dengan bahan DSKP.')">Akses Modul</button></div>
+<div class="card"><div class="icon">🇲🇾</div><span class="badge">Tahun 6</span><h3>Modul Tahun 6</h3><p class="muted">Nota, aktiviti, kuiz dan lembaran kerja.</p><button class="btn primary" onclick="msg('Ruang Tahun 6 sedia diisi dengan bahan DSKP.')">Akses Modul</button></div></div>
+<div class="sec"><div><h2>Kandungan Utama</h2></div></div><div class="grid g4"><div class="card"><h3>📌 Topik Popular</h3><p class="muted">Ruang topik popular.</p></div><div class="card"><h3>📝 Nota Terkini</h3><p class="muted">Ruang nota terkini.</p></div><div class="card"><h3>🎯 Aktiviti Terkini</h3><p class="muted">Ruang aktiviti terkini.</p></div><div class="card"><h3>🧠 Kuiz Sejarah</h3><p class="muted">Terus ke kuiz interaktif.</p><button class="btn outline" onclick="go('kuiz')">Main</button></div></div></section>
+
+<section class="page" id="ai"><div class="sec"><div><h2>AI & Inovasi</h2><span class="muted">Prompt dan idea AI secara beretika</span></div></div><div class="note"><b>Peringatan:</b> Kandungan AI perlu disemak. Jangan masukkan data peribadi murid sebenar.</div><div class="sec"><div><h2>AI untuk Guru</h2></div></div><div class="grid g3">
+<div class="card"><h3>📋 Jana RPH</h3><p class="muted">Bina RPH berdasarkan topik, objektif, masa, PAK21 dan pentaksiran.</p><button class="btn primary" onclick="copyText('Bina RPH Sejarah Tahun 6 berdasarkan topik [TOPIK], objektif [OBJEKTIF], masa [MASA]. Sertakan PAK21, pembelajaran terbeza dan pentaksiran.')">Salin Prompt</button></div>
+<div class="card"><h3>❓ Jana Soalan</h3><p class="muted">Bina soalan objektif dan pelbagai aras.</p><button class="btn primary" onclick="copyText('Bina 10 soalan Sejarah Tahun 6 tentang [TOPIK], 4 pilihan jawapan dan skema.')">Salin Prompt</button></div>
+<div class="card"><h3>🎯 Jana Aktiviti</h3><p class="muted">Cadangkan aktiviti PAK21 dan pembelajaran terbeza.</p><button class="btn primary" onclick="copyText('Cadangkan aktiviti PAK21 untuk Sejarah Tahun 6 topik [TOPIK] mengikut tahap murid.')">Salin Prompt</button></div>
+<div class="card"><h3>📊 Bahan PBD</h3><p class="muted">Bina instrumen, evidens, kriteria dan rubrik.</p><button class="btn primary" onclick="copyText('Bina instrumen PBD untuk Sejarah topik [TOPIK], evidens, kriteria kejayaan dan rubrik.')">Salin Prompt</button></div>
+<div class="card"><h3>📚 Nota</h3><p class="muted">Terangkan topik dengan bahasa mudah.</p><button class="btn primary" onclick="copyText('Terangkan topik [TOPIK] Sejarah Tahun [TAHUN] dengan bahasa mudah dan soalan ulang kaji.')">Salin Prompt</button></div>
+<div class="card"><h3>💡 Idea PdP</h3><p class="muted">Cadangkan inovasi PdP menggunakan teknologi.</p><button class="btn primary" onclick="copyText('Cadangkan satu aktiviti inovatif PdP Sejarah menggunakan teknologi digital, objektif, langkah, bahan dan pentaksiran.')">Salin Prompt</button></div></div>
+<div class="sec"><div><h2>Pautan AI</h2></div></div><div class="grid g3">
+<div class="card res"><div class="ico">✨</div><div><h3>Gemini</h3><a href="https://gemini.google.com/app" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">🧠</div><div><h3>ChatGPT</h3><a href="https://chatgpt.com/" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">🎨</div><div><h3>Canva</h3><a href="https://canva.link/uejmlpcxtcnamhh" target="_blank">Buka ↗</a></div></div></div></section>
+
+<section class="page" id="kuiz"><div class="sec"><div><h2>Kuiz Digital</h2><span class="muted">Contoh kuiz Sejarah interaktif</span></div></div><div class="card">
+<h3>Kuiz Sejarah</h3>
+<p><b>1. Apakah nama negara kita?</b></p><label><input type="radio" name="q1" value="1"> Malaysia</label><label><input type="radio" name="q1" value="0"> Indonesia</label><label><input type="radio" name="q1" value="0"> Thailand</label>
+<p><b>2. Berapakah jumlah prinsip Rukun Negara?</b></p><label><input type="radio" name="q2" value="0"> 4</label><label><input type="radio" name="q2" value="1"> 5</label><label><input type="radio" name="q2" value="0"> 6</label>
+<p><b>3. Apakah nama bendera Malaysia?</b></p><label><input type="radio" name="q3" value="1"> Jalur Gemilang</label><label><input type="radio" name="q3" value="0"> Sang Saka</label><label><input type="radio" name="q3" value="0"> Bendera Persekutuan</label>
+<br><button class="btn primary" onclick="quiz()">Semak Jawapan</button><div id="qr"></div></div>
+<div class="sec"><div><h2>Platform Kuiz</h2></div></div><div class="card res"><div class="ico">🎮</div><div><h3>Kahoot</h3><a href="https://kahoot.it/" target="_blank">Buka Kahoot ↗</a></div></div></section>
+
+<section class="page" id="pbd"><div class="sec"><div><h2>Dashboard PBD</h2><span class="muted">Prototaip rekod TP1–TP6</span></div><button class="btn primary" onclick="addStudent()">＋ Tambah Murid</button></div><div class="note">Data PBD prototaip disimpan pada pelayar ini sahaja. Untuk data sebenar, gunakan backend/database dan kawalan akses.</div><div class="grid g4" style="margin-top:14px" id="sum"></div><div class="card" style="margin-top:14px"><div class="table"><table><thead><tr><th>Bil</th><th>Nama</th><th>TP</th><th>Catatan</th><th></th></tr></thead><tbody id="pb"></tbody></table></div></div></section>
+
+<section class="page" id="sumber"><div class="sec"><div><h2>Sumber Digital</h2><span class="muted">Pautan platform pendidikan</span></div></div><div class="grid g3">
+<div class="card res"><div class="ico">🎮</div><div><h3>Kahoot</h3><a href="https://kahoot.it/" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">✨</div><div><h3>Gemini</h3><a href="https://gemini.google.com/app" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">🏛️</div><div><h3>idMe KPM</h3><a href="https://idme.moe.gov.my/login" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">📄</div><div><h3>Liveworksheets</h3><a href="https://www.liveworksheets.com/" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">📝</div><div><h3>Items KPM</h3><a href="https://items.moe.edu.my/umum/" target="_blank">Buka ↗</a></div></div>
+<div class="card res"><div class="ico">🎨</div><div><h3>Canva</h3><a href="https://canva.link/uejmlpcxtcnamhh" target="_blank">Buka ↗</a></div></div>
+</div></section>
+
+<section class="page" id="aktiviti"><div class="sec"><div><h2>Aktiviti & Latihan</h2><span class="muted">Ruang bahan boleh dikembangkan</span></div></div><div class="grid g3"><div class="card"><div class="icon">📄</div><h3>Lembaran Kerja</h3><p class="muted">Bahan cetak dan digital.</p></div><div class="card"><div class="icon">🎯</div><h3>Latihan Objektif</h3><p class="muted">Soalan aneka pilihan.</p></div><div class="card"><div class="icon">✍️</div><h3>Latihan Struktur</h3><p class="muted">Soalan struktur.</p></div><div class="card"><div class="icon">👥</div><h3>Aktiviti Kumpulan</h3><p class="muted">Kolaborasi murid.</p></div><div class="card"><div class="icon">🚀</div><h3>PAK21</h3><p class="muted">Pembelajaran aktif.</p></div><div class="card"><div class="icon">🧩</div><h3>Pembelajaran Terbeza</h3><p class="muted">Pengayaan dan pemulihan.</p></div></div></section>
+
+<section class="page" id="admin"><div class="sec"><div><h2>Admin</h2><span class="muted">Panel pengurusan prototaip</span></div></div><div class="grid g3"><div class="card"><h3>👨‍🏫 Pengurusan Guru</h3><p class="muted">Backend diperlukan untuk login dan akaun.</p></div><div class="card"><h3>🎓 Pengurusan Murid</h3><p class="muted">Jangan masukkan data peribadi sebenar.</p></div><div class="card"><h3>📚 Pengurusan Bahan</h3><p class="muted">Boleh disambungkan kepada repository.</p></div><div class="card"><h3>🧠 Pengurusan Kuiz</h3><p class="muted">Bank soalan boleh ditambah.</p></div><div class="card"><h3>📊 Pengurusan PBD</h3><p class="muted">Versi semasa menggunakan localStorage.</p></div><div class="card"><h3>⚙️ Tetapan</h3><p class="muted">Tema dan kandungan boleh dikembangkan.</p></div></div></section>
+
+<section class="page" id="profil"><div class="hero"><span class="badge" style="background:#ffffff22;color:#fff">PROFIL PENDIDIK</span><h1>ZULIZAN BIN JALIL</h1><p>Guru / Pendidik dengan fokus kepada Pendidikan, Sejarah, Teknologi Pendidikan, AI dalam Pendidikan, Inovasi PdP dan PBD.</p></div><div class="sec"><div><h2>Visi, Misi & Objektif</h2></div></div><div class="grid g3"><div class="card"><h3>👁️ Visi</h3><p class="muted">Membina ekosistem pembelajaran digital yang menghubungkan guru, murid, ilmu dan teknologi.</p></div><div class="card"><h3>🎯 Misi</h3><p class="muted">Menyediakan bahan pembelajaran yang sistematik, mudah dicapai dan boleh dikembangkan.</p></div><div class="card"><h3>🚀 Objektif</h3><p class="muted">Memanfaatkan teknologi digital dan AI untuk menyokong PdP, pembelajaran kendiri, PBD dan inovasi.</p></div></div></section>
+
+<footer class="footer">EDU HUB ZULIZAN • Portal Digital Pendidikan & Inovasi Guru • © 2026 Zulizan bin Jalil</footer>
+</div></main>
+<script>
+var pages=document.querySelectorAll('.page');
+function go(id){location.hash=id;render()}
+function render(){var id=location.hash.replace('#','')||'dashboard';var ok=false;for(var i=0;i<pages.length;i++){pages[i].classList.toggle('active',pages[i].id===id);if(pages[i].id===id)ok=true}if(!ok){id='dashboard';document.getElementById(id).classList.add('active')}var links=document.querySelectorAll('.nav a');for(var j=0;j<links.length;j++){links[j].classList.toggle('on',links[j].getAttribute('href')==='#'+id)}document.getElementById('side').classList.remove('open');if(id==='pbd')renderPBD();scrollTo(0,0)}
+window.addEventListener('hashchange',render);window.addEventListener('load',render);
+function msg(t){alert(t)}
+function copyText(t){if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){alert('Prompt disalin.')})}else{alert(t)}}
+function quiz(){var s=0;var a=document.querySelector('input[name=q1]:checked');if(a)s+=+a.value;var b=document.querySelector('input[name=q2]:checked');if(b)s+=+b.value;var c=document.querySelector('input[name=q3]:checked');if(c)s+=+c.value;document.getElementById('qr').innerHTML='<div class="note" style="margin-top:12px">Markah anda: '+s+'/3.</div>'}
+function getStudents(){try{return JSON.parse(localStorage.getItem('eduhub-pbd')||'[]')}catch(e){return[]}}
+function saveStudents(a){localStorage.setItem('eduhub-pbd',JSON.stringify(a));renderPBD()}
+function addStudent(){var a=getStudents();var n=prompt('Nama contoh murid:','Murid Contoh '+(a.length+1));if(!n)return;var tp=parseInt(prompt('TP semasa (1-6):','3'),10)||3;if(tp<1)tp=1;if(tp>6)tp=6;var c=prompt('Catatan:','');a.push({name:n,tp:tp,note:c});saveStudents(a)}
+function delStudent(i){var a=getStudents();a.splice(i,1);saveStudents(a)}
+function renderPBD(){var a=getStudents();var counts=[1,2,3,4,5,6];var sum=document.getElementById('sum');if(!sum)return;var h='';for(var i=0;i<counts.length;i++){var c=0;for(var j=0;j<a.length;j++)if(+a[j].tp===counts[i])c++;h+='<div class="card"><span class="muted">TP'+counts[i]+'</span><h2>'+c+'</h2></div>'}sum.innerHTML=h;var body=document.getElementById('pb');if(!a.length){body.innerHTML='<tr><td colspan="5" style="text-align:center;padding:22px;color:#667085">Tiada rekod.</td></tr>';return}var rows='';for(var k=0;k<a.length;k++){rows+='<tr><td>'+(k+1)+'</td><td>'+String(a[k].name).replace(/[&<>]/g,'')+'</td><td>TP'+a[k].tp+'</td><td>'+String(a[k].note||'').replace(/[&<>]/g,'')+'</td><td><button class="btn outline" onclick="delStudent('+k+')">Padam</button></td></tr>'}body.innerHTML=rows}
+document.getElementById('search').addEventListener('input',function(){var v=this.value.toLowerCase();if(v.indexOf('guru')>=0)go('guru');else if(v.indexOf('murid')>=0)go('murid');else if(v.indexOf('sejarah')>=0)go('sejarah');else if(v.indexOf('ai')>=0)go('ai');else if(v.indexOf('kuiz')>=0)go('kuiz');else if(v.indexOf('pbd')>=0)go('pbd');else if(v.indexOf('sumber')>=0)go('sumber')});
+</script>
+</body></html>
